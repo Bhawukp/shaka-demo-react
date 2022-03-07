@@ -2,6 +2,7 @@ import './App.css';
 import Video from './components/Video'
 import react,{useState} from 'react';
 import Modal from './components/Modal'
+import { RiCloseLine } from "react-icons/ri";
 // import ErrorBoundary from './components/ErrorBoundary';
 
 
@@ -15,7 +16,7 @@ function App() {
 
          
 
-        <button className="primaryBtn" onClick={() =>{ setIsOpen(true); setPlay(false)}}>
+       {/* <button className="primaryBtn" onClick={() =>{ setIsOpen(true); setPlay(false)}}>
         
         Open Modal
       </button>
@@ -29,6 +30,24 @@ function App() {
       }}>Play Video</button>
       {isOpen && <Modal setIsOpen={setIsOpen} />}
       {play && <Video/>}
+      <div>
+        <Modal setIsOpen={true}/>
+    </div>*/}
+    
+    
+      <Video/>
+      <button className="primaryBtn" onClick={() =>{ setIsOpen(true); setPlay(false)}}>
+        
+        Open Modal
+      </button>
+     
+      <Modal setIsOpen={true}/>
+      
+    
+    
+    
+    
+    
       
       
 

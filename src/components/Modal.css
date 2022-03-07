@@ -10,8 +10,8 @@
   }
   
   .centered {
-    position: fixed;
-    top:50%;
+    position: absolute;
+    
     left: 50%;
     
     transform: translate(-50%, -50%);
@@ -53,7 +53,7 @@
     padding: 10px;
     font-size: 17px;
     color: white;
-    text-align: left;
+    text-align: center;
     margin: 20px;
     
     z-index: 2;
@@ -135,4 +135,7 @@
     box-shadow: none;
     transform: none;
     background: whitesmoke;
+  }
+  select#color,select#bgcolor ,select#fcolor,select#fsize{
+    margin: 10px;
   }

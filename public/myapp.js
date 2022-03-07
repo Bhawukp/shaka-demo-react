@@ -8,12 +8,12 @@ const manifestUri =
 async function init() {
   // When using the UI, the player is made automatically by the UI object.
   const video = document.getElementById('video');
+  const videoContainer=document.getElementById('video_container');
   const ui = video['ui'];
   const controls = ui.getControls();
   const player = controls.getPlayer();
   const btn = document.getElementById('btn');
   let hideBar = true;
-<<<<<<< HEAD
   const config={
     'seekBarColors': {
       base: '#185adb',
@@ -23,7 +23,6 @@ async function init() {
     }
   }
   ui.configure(config);
-=======
   const colors = document.getElementById('colors');
   const textContainer = document.getElementsByClassName('shaka-text-container');
   
@@ -35,7 +34,6 @@ async function init() {
     // console.log(colors.value)
     textContainer[0].style.color = `${colors.value}`
   })
->>>>>>> cfba31498194b9ee97899825b18f2eb929d0f29a
 
   // const skip = new (func())();
 
